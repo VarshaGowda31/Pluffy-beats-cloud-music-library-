@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PluffyBeats | Login</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css?v=auth_fixed_20251229">
+</head>
+
+<body class="auth-body">
+
+  <div class="background-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+  </div>
+
+  <div class="auth-card glass">
+    <!-- Protocol Warning -->
+    <script>
+      if (window.location.protocol === 'file:') {
+        document.write('<div style="background: rgba(239, 68, 68, 0.2); border: 1px solid #ef4444; color: #fca5a5; padding: 10px; border-radius: 8px; margin-bottom: 15px; font-size: 13px;">⚠️ <strong>Error:</strong> You are opening this file directly. Please double-click <code>run_app.bat</code> or use a local server to run this app.</div>');
+      }
+    </script>
+
+    <div class="logo-section">
+      <img src="assets/logo.png" alt="PluffyBeats Logo" class="logo-animated"
+        style="width: 80px; margin-bottom: 15px; border-radius: 50%;">
+      <h1>PluffyBeats</h1>
+      <p>Vibe to your own rhythm.</p>
+    </div>
+
+    <div class="input-group">
+      <i class="fa-solid fa-envelope"></i>
+      <input id="email" type="email" placeholder="Email Address">
+    </div>
+
+    <div class="input-group">
+      <i class="fa-solid fa-lock"></i>
+      <input id="password" type="password" placeholder="Password">
+    </div>
+
+    <button onclick="login()" class="btn-primary">
+      Login <i class="fa-solid fa-arrow-right"></i>
+    </button>
+
+    <div class="divider">or</div>
+
+    <button class="btn-secondary" onclick="signup()">Create Account</button>
+  </div>
+
+  <script type="module" src="js/auth.js"></script>
+</body>
+
+</html>
